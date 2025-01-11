@@ -1,18 +1,18 @@
 # gkptan.github.io
  repositório público de projetos
 
-## REPOSITÓRIO PÚBLICO
+# REPOSITÓRIO PÚBLICO
 
-# PROJETOS FEITOS POR MIM
+## PROJETOS FEITOS POR MIM
 
-HTML, CSS E JAVASCRIPT
+### HTML, CSS E JAVASCRIPT
 
 * [Loja de Calçados](https://gkptan.github.io/Loja-de-calcados)
 * [Day_and_Night](https://gkptan.github.io/Day_and_Night/)
 
-# PROJETOS DE EVENTOS QUE EU PARTICIPEI
+## PROJETOS DE EVENTOS QUE EU PARTICIPEI
 
-HTML, CSS E JAVASCRIPT
+### HTML, CSS E JAVASCRIPT
 
 * [Portfólio](https://gkptan.github.io/Portfolio/)
 * [Projeto GTA](https://gkptan.github.io/projeto-GTA/)
@@ -22,7 +22,7 @@ HTML, CSS E JAVASCRIPT
 * [Projeto História do Android](https://gkptan.github.io/correction-of-site-android-history/)
 * [Projeto One Piece](https://gkptan.github.io/projeto-one-piece/)
 
-# CURSOS
+## CURSOS
 
 * [Repositório de HTML e CSS](https://gkptan.github.io/HTML-CSS/)
 * [Repositório de Javascript](https://gkptan.github.io/Javascript/)
