@@ -9,6 +9,7 @@
 
 * [Loja de Calçados](https://gkptan.github.io/Loja-de-calcados)
 * [Day_and_Night](https://gkptan.github.io/Day_and_Night/)
+* [Minijogo de adivinhação](https://gkptan.github.io/Javascript/exerc%C3%ADcios/ex012/index.html)
 
 ## PROJETOS DE EVENTOS QUE EU PARTICIPEI
 
