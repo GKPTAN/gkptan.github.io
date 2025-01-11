@@ -23,6 +23,12 @@
 * [Projeto História do Android](https://gkptan.github.io/correction-of-site-android-history/)
 * [Projeto One Piece](https://gkptan.github.io/projeto-one-piece/)
 
+### REACT
+
+* [movies_geek](https://movies-geek.vercel.app/)
+* [Portfólio feito com SASS](https://portfolio-sass-ten.vercel.app/)
+* [Quiz](https://quiz-eosin-theta.vercel.app/)
+
 ## CURSOS
 
 * [Repositório de HTML e CSS](https://gkptan.github.io/HTML-CSS/)
