@@ -28,6 +28,7 @@
 * [movies_geek](https://movies-geek.vercel.app/)
 * [Portfólio feito com SASS](https://portfolio-sass-ten.vercel.app/)
 * [Quiz](https://quiz-eosin-theta.vercel.app/)
+* [Contagem Regressiva](https://countdown-six-beta.vercel.app/)
 
 ## CURSOS
 
