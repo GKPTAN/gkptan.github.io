@@ -30,6 +30,7 @@
 * [Quiz](https://quiz-eosin-theta.vercel.app/)
 * [Contagem Regressiva](https://countdown-six-beta.vercel.app/)
 * [Todo (Lista de tarefas)](https://todo-black-nine.vercel.app/)
+* [Formulário de inscrição](https://form-newsletter-five.vercel.app/)
 
 ## CURSOS
 
