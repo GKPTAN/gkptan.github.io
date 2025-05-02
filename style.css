@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #eff1f3;
+    color: black;
+    font-family: "Gentium Plus", serif;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #2a0800;
+    color: white;
+    padding: 1.5rem 1.5rem;
+    margin-bottom: 2rem;
+}
+header a h1 {
+    color: white;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    text-decoration: underline;
+    font-family: "Gentium Plus", serif;
+    text-align: center;
+    line-height: 55px;
+    transition: all 0.3s ease-in-out;
+}
+header a:hover h1 {
+    color: #5497a7;
+    border: 2px solid #5497a7;
+}
+header h2 {
+    font-family: "Gentium Plus", serif;
+    font-size: 3rem;
+}
+header nav {
+    width: 30%;
+}
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    position: relative;
+}
+header nav ul li a {
+    background-color: #eff1f3;
+    border: 1px solid transparent;
+    text-decoration: none;
+    color: black;
+    padding: 0.4rem;
+    border-radius: 11px;
+    transition: all 0.3s ease-in-out;
+}
+header nav ul li a:hover {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #eff1f3;
+}
+header nav ul li a:active {
+    background-color: #eff1f3;
+    color: black;
+}
+header nav ul li a:has(i) {
+    background-color: transparent;
+}
+header nav ul li a i {
+    background-color: #eff1f3;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+    font-size: 28px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+.fa-instagram {
+    color: #bc2a8d;
+}
+.fa-instagram:hover {
+    border-color: #bc2a8d;
+}
+.fa-linkedin {
+    color: #0e76a8;
+}
+.fa-linkedin:hover {
+    border-color: #0e76a8;
+}
+.fa-whatsapp {
+    color: #25D366;
+}
+.fa-whatsapp:hover {
+    border-color: #25D366;
+}
+#copy {
+    position: absolute;
+    left: 57%;
+    bottom: -65px;
+    background-color: white;
+    color: black;
+    font-size: 12px;
+    padding: 5px 7px;
+    border-radius: 15px;
+    border: 1px solid black;
+    opacity: 0;
+}
+#copy i {
+    color: rgb(115, 211, 108);
+}
+header nav ul li a i:hover {
+    background-color: transparent;
+    border: 1px solid #eff1f3;
+}
+header nav ul li a:has(i):hover {
+    border: 1px solid transparent;
+}
+main {
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 3rem;
+}
+main .done {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+main .events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
