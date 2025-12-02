@@ -7,13 +7,17 @@
 }
 html {
     scroll-behavior: smooth;
+    margin-bottom: 0;
 }
 body {
     background-color: #eff1f3;
     color: black;
     font-family: "Gentium Plus", serif;
+    overflow-x: hidden;
+    width: 100%;
 }
 header {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -41,19 +45,23 @@ header a:hover h1 {
 header h2 {
     font-family: "Gentium Plus", serif;
     font-size: 3rem;
+    min-width: 0;
+    text-align: center;
 }
 header nav {
-    width: 30%;
+    max-width: 40%;
+    min-width: 150px;
 }
-header nav ul {
+header nav ul, #rodape #nav-bottom ul {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     list-style: none;
     position: relative;
+    flex-wrap: nowrap;
 }
-header nav ul li a {
+header nav ul li a, #rodape #nav-bottom ul li a {
     background-color: #eff1f3;
     border: 1px solid transparent;
     text-decoration: none;
@@ -61,20 +69,22 @@ header nav ul li a {
     padding: 0.4rem;
     border-radius: 11px;
     transition: all 0.3s ease-in-out;
+    white-space: nowrap;
+    position: relative;
 }
-header nav ul li a:hover {
+header nav ul li a:hover, #rodape #nav-bottom ul li a:hover {
     background-color: transparent;
     color: white;
     border: 1px solid #eff1f3;
 }
-header nav ul li a:active {
+header nav ul li a:active, #rodape #nav-bottom ul li a:active {
     background-color: #eff1f3;
     color: black;
 }
-header nav ul li a:has(i) {
+header nav ul li a:has(i), #rodape #nav-bottom ul li a:has(i) {
     background-color: transparent;
 }
-header nav ul li a i {
+header nav ul li a i, #rodape #nav-bottom ul li a i {
     background-color: #eff1f3;
     width: 50px;
     height: 50px;
@@ -103,7 +113,7 @@ header nav ul li a i {
 .fa-whatsapp:hover {
     border-color: #25D366;
 }
-#copy {
+.copy {
     position: absolute;
     left: 57%;
     bottom: -65px;
@@ -115,7 +125,7 @@ header nav ul li a i {
     border: 1px solid black;
     opacity: 0;
 }
-#copy i {
+.copy i {
     color: rgb(115, 211, 108);
 }
 header nav ul li a i:hover {
@@ -126,19 +136,13 @@ header nav ul li a:has(i):hover {
     border: 1px solid transparent;
 }
 main {
-    max-width: 80%;
+    max-width: 90%;
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 32px;
     margin-bottom: 3rem;
-}
-main .done {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
 }
 main .events {
     display: flex;
@@ -147,7 +151,12 @@ main .events {
     gap: 2rem;
 }
 .projects .done {
-    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 90vw;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
     padding: 2rem 0;
@@ -156,6 +165,8 @@ main .events {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
 }
 .projects .done .list-projects .project {
     display: flex;
@@ -163,9 +174,20 @@ main .events {
     align-items: center;
     gap: 1rem;
     perspective: 800px;
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
 }
 .projects .done .list-projects .project .video-project {
+    display: block;
+    width: 500px !important;
+    max-width: 500px !important;
+    height: 500px;
+    object-fit: contain;
+    cursor: pointer;
     transform: rotateX(75deg);
+    transform-origin: center bottom;
+    backface-visibility: hidden;
     transition: transform 0.5s;
 }
 .projects .done .list-projects .project .video-project:hover {
@@ -176,6 +198,7 @@ main .events {
     font-size: 1.2rem;
     text-decoration: none;
     padding: 0.5rem;
+    margin-bottom: 1rem;
     background-color: #223843;
     color: white;
     border-radius: 12px;
@@ -183,4 +206,108 @@ main .events {
 }
 .projects .done .list-projects .project a:hover {
     background-color: #5497a7;
+}
+#rodape {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #2a0800;
+    color: white;
+}
+#rodape #nav-bottom {
+    width: 100%;
+}
+#rodape #nav-bottom .copy {
+    left: 62%;
+    bottom: 65px;
+    border: 1px solid #000;
+    color: #000;
+    z-index: 1000;
+}
+
+@media (max-width: 1024px) {
+    header {
+        justify-content: start;
+        gap: 2rem;
+    }
+    header h2 {
+        font-size: 2rem;
+    }
+} 
+@media (max-width: 850px) {
+    header {
+        justify-content: start;
+        gap: 1.5rem;
+    }
+    header a h1 {
+        width: 55px;
+        height: 55px;
+        line-height: 45px;
+        font-size: 1.8rem;
+    }
+    header h2 {
+        font-size: 1.8rem;
+    }
+    header nav ul li a i {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+    header nav ul li a i:before {
+        position: absolute;
+        left: 30%;
+        top: -6px;
+    }
+} 
+@media (max-width: 768px) {
+    header {
+        justify-content: space-between;
+        gap: 0;
+        padding: 1.5rem 1rem;
+    }
+    .projects .done .list-projects .project .video-project {
+        width: 400px;
+        height: 400px;
+    }
+}
+@media (max-width: 550px) {
+    .projects h1 {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 425px) {
+
+    .projects .done .list-projects .project {
+        max-width: 350px;
+    }
+    .projects .done .list-projects .project .video-project {
+        width: 300px;
+        height: 300px;
+    }
+}
+@media (max-width: 375px) {
+    header h2 {
+        font-size: 1rem;
+    }
+    .projects h1 {
+        font-size: 1rem;
+    }
+    .projects .done .list-projects .project {
+        max-width: 320px;
+    }
+    .projects .done .list-projects .project .video-project {
+        width: 200px;
+        height: 200px;
+    }
+    .events .subtitle {
+        font-size: 1rem;
+    }
+    #rodape #nav-bottom ul {
+        justify-content: center;
+        gap: 6px;
+    }
+    #rodape #nav-bottom ul li a {
+        padding: 0.15rem;
+        border-radius: 8px;
+    }
 }
