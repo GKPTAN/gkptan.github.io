@@ -10,23 +10,28 @@ html {
     margin-bottom: 0;
 }
 body {
-    background-color: #eff1f3;
-    color: black;
+    background-color: #000;
+    color: #fff;
     font-family: "Gentium Plus", serif;
     overflow-x: hidden;
     width: 100%;
 }
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #2a0800;
+    background-color: #000;
     color: white;
     padding: 1.5rem 1.5rem;
     margin-bottom: 2rem;
+    border-bottom: 1px solid #adacac4f;
+    z-index: 10000;
 }
-header a h1 {
+header a .logo {
     color: white;
     width: 65px;
     height: 65px;
@@ -38,15 +43,25 @@ header a h1 {
     line-height: 55px;
     transition: all 0.3s ease-in-out;
 }
-header a:hover h1 {
+header a:hover .logo {
     color: #5497a7;
     border: 2px solid #5497a7;
 }
-header h2 {
+header .author {
     font-family: "Gentium Plus", serif;
-    font-size: 3rem;
+    font-size: 1.1rem;
     min-width: 0;
     text-align: center;
+    background: linear-gradient(90deg, rgb(170, 61, 197), rgb(125, 184, 214), #aa3dc5);
+    background-size: 300% 100%;
+    background-position: 0% 50%;
+    background-repeat: no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    display: inline-block;
+    animation: gradientAnimation 4s linear infinite;
 }
 header nav {
     max-width: 40%;
@@ -135,6 +150,75 @@ header nav ul li a i:hover {
 header nav ul li a:has(i):hover {
     border: 1px solid transparent;
 }
+.introduction {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+.introduction .name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 90%;
+}
+.introduction .name .title {
+    font-size: 5rem;
+}
+.introduction .name .open {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(120deg, #aa3dc5 10%, #7db8d6 50%);
+    background-size: 200% 100%;
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.introduction .name .open img {
+    width: 150px;
+    height: 150px;
+}
+.introduction .profission {
+    padding: 0.5rem 0.8rem;
+    border: 1px solid #878787da;
+    border-radius: 30px;
+    background-color: transparent;
+    transition: all 0.5s ease-in-out;
+}
+.introduction .profission:hover {
+    background-color: #7db8d686;
+}
+.introduction .slogan {
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+.introduction .slogan .word-tech {
+    color: #bef2fd;
+    text-shadow: 
+        0 0 2px #bef2fd,
+        0 0 8px #bef2fd,
+        0 0 16px rgba(190, 242, 253, 0.9),
+        0 0 32px rgba(190, 242, 253, 0.7),
+        0 0 64px rgba(190, 242, 253, 0.5)
+    ;
+}
+.introduction .slogan .word-inov {
+    color: #d4a3f5;
+    text-shadow: 
+        0 0 2px #d4a3f5,
+        0 0 8px #d4a3f5,
+        0 0 16px rgba(212, 163, 245, 0.9),
+        0 0 32px rgba(212, 163, 245, 0.7),
+        0 0 64px rgba(212, 163, 245, 0.5)
+    ;
+}
 main {
     max-width: 90%;
     margin: auto;
@@ -157,15 +241,17 @@ main .events {
     gap: 2rem;
     width: 100%;
     max-width: 90vw;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
     padding: 2rem 0;
 }
-.projects .done .list-projects {
+.projects h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.projects .list-projects {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     overflow: hidden;
 }
 .projects .done .list-projects .project {
@@ -207,6 +293,81 @@ main .events {
 .projects .done .list-projects .project a:hover {
     background-color: #5497a7;
 }
+.projects .events {
+    width: 100%;
+}
+.projects .events .web {
+    width: 100%;;
+}
+.projects .events .list-projects {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.projects .events .list-projects .project {
+    flex-basis: 500px;
+    margin-bottom: 2rem;
+}
+.projects .events .list-projects .project img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.projects .events .list-projects .project .info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-left: 1px solid #5555557c;
+    border-right: 1px solid #5555557c;
+    border-bottom: 1px solid #5555557c;
+    padding: 1rem 1rem;
+    border-radius: 0 0 10px 10px;
+}
+.projects .events .list-projects .project .info .title-project {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.projects .events .list-projects .project .info .title-project h4 {
+    font-size: 1.5rem;
+    color: #bed0d3;
+}
+.projects .events .list-projects .project .info .title-project .links {
+    display: flex;
+    gap: 1rem;
+}
+.projects .events .list-projects .project .info .title-project .links a {
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+.projects .events .list-projects .project .info .title-project .links a:hover {
+    color: #36a5a1;
+}
+.projects .events .list-projects .project .info .description {
+    font-size: 1rem;
+    color: #ccc;
+    line-height: 1.5rem;
+}
+.projects .events .list-projects .project .info .techs {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    list-style: none;
+    list-style-position: inside;
+    color: #fff;
+    font-size: 0.9rem;
+}
+.projects .events .list-projects .project .info .techs .tech {
+    background-color: #222527;
+    padding: 0.3rem 0.6rem;
+    border-radius: 8px;
+}
+.projects .events .list-projects .project .info .status {
+    font-size: 0.9rem;
+    color: #aaa;
+    text-transform: uppercase;
+    text-align: center;
+}
 #rodape {
     width: 100%;
     margin-top: 2rem;
@@ -223,6 +384,19 @@ main .events {
     border: 1px solid #000;
     color: #000;
     z-index: 1000;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+#lightningCanvas {
+  position: fixed;
+  inset: 0;
+  z-index: -1000;
+  pointer-events: none;
 }
 
 @media (max-width: 1024px) {
