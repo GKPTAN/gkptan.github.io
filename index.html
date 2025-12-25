@@ -1,272 +1,755 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Krona+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Krona+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Public Repository</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <a href="#">
-            <h2 class="logo">GK</h2>
-        </a>
+      <a href="#">
+        <h2 class="logo">GK</h2>
+      </a>
 
-        <h2 class="author">Guilherme Amorim</h2>
+      <h2 class="author">Guilherme Amorim</h2>
 
-        <nav id="nav-top">
-            <ul>
-                <li><a href="https://github.com/GKPTAN" target="_blank" title="Ir para o Github" rel="author"><i class="fab fa-github"></i></a></li>
-                <li><a href="https://instagram.com/gkapitan07" target="_blank" title="Ir para o instagram" rel="author"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="https://linkedin.com/in/guilherme-dos-santos-amorim-43b57a28b" target="_blank" title="Ir para o linkedin" rel="author"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="https://wa.me/559984080271" target="_blank" title="Ir para o whatsapp" rel="author"><i class="fab fa-whatsapp"></i></a></li>
-                <li><a id="email" href="#" title="Clique para copiar o e-mail" rel="author"><i class="fas fa-envelope"></i></a></li>
-                <li class="copy">e-mail copiado com sucesso <i class="fas fa-check"></i></li>
-                <li><a href="#projects">Meus Projetos</a></li>
-            </ul>
-        </nav>
+      <nav id="nav-top">
+        <ul>
+          <li>
+            <a
+              href="https://github.com/GKPTAN"
+              target="_blank"
+              title="Ir para o Github"
+              rel="author"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://instagram.com/gkapitan07"
+              target="_blank"
+              title="Ir para o instagram"
+              rel="author"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://linkedin.com/in/guilherme-dos-santos-amorim-43b57a28b"
+              target="_blank"
+              title="Ir para o linkedin"
+              rel="author"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://wa.me/559984080271"
+              target="_blank"
+              title="Ir para o whatsapp"
+              rel="author"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              id="email"
+              href="#"
+              title="Clique para copiar o e-mail"
+              rel="author"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </li>
+          <li class="copy">
+            e-mail copiado com sucesso <i class="fas fa-check"></i>
+          </li>
+          <li><a href="#projects">Meus Projetos</a></li>
+        </ul>
+      </nav>
     </header>
 
     <canvas id="lightningCanvas"></canvas>
 
     <section class="description">
-
-    <div class="introduction">
+      <div class="introduction">
         <div class="name">
-            <div class="open">
-                <img src="code_open.svg" alt="tag de abertura">
-            </div>
-            <h1 class="title">Guilherme Amorim</h1>
+          <div class="open">
+            <img src="code_open.svg" alt="tag de abertura" />
+          </div>
+          <h1 class="title">Guilherme Amorim</h1>
         </div>
         <span class="profission">Front-End Developer</span>
-        <p class="slogan">Desenvolvedor Front-End apaixonado por <span class="word-tech">tecnologia</span> e <span class="word-inov">inovações</span></p>
-    </div>
-
+        <p class="slogan">
+          Desenvolvedor Front-End apaixonado por
+          <span class="word-tech">tecnologia</span> e
+          <span class="word-inov">inovações</span>
+        </p>
+      </div>
     </section>
     <main class="projects" id="projects">
-        <section class="done">
-            <h2 class="subtitle">PROJETOS FEITOS POR MIM</h2>
-            <h3>HTML, CSS e JAVASCRIPT</h3>
-            <ul class="list-projects">
-                <li class="project">
-                    <video src="shoes_store.mp4" class="video-project" onmouseover="this.play();" onmouseleave="this.pause()" loop></video>
-                    <a href="https://gkptan.github.io/Loja-de-calcados" target="_blank">Loja de Calçados</a>
-                </li>
-                <li class="project">
-                    <video src="day_and_night.mp4" class="video-project" onmouseover="this.play();" onmouseleave="this.pause()" loop></video>
-                    <a href="https://gkptan.github.io/Day_and_Night" target="_blank">Dia e Noite</a>
-                </li>
-                <li class="project">
-                    <video src="guessing_game.mp4" class="video-project" onmouseover="this.play();" onmouseleave="this.pause()" loop></video>
-                    <a href="https://gkptan.github.io/Javascript/exerc%C3%ADcios/ex012/index.html" target="_blank">Jogo de adivinhação</a>
-                </li>
-            </ul>
-        </section>
-        <section class="events">
-            <h2 class="subtitle">PROJETOS DE EVENTOS QUE EU PARTICIPEI</h2>
-            <div class="web">
-                <h3>HTML, CSS e JAVASCRIPT</h3>
-                <ul class="list-projects">
-                    <li class="project">
-                        <img src="portfolio.png" alt="site portfólio">
-                        <article class="info">
-                            <div class="title-project">
-                                <h4>Portfolio</h4>
-                                <div class="links">
-                                    <a href="https://github.com/GKPTAN/Portfolio" target="_blank"><i class="fab fa-github"></i></a>
-                                    <a href="https://gkptan.github.io/Portfolio" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                            <p class="description">Portfólio Personalizado</p>
-                            <ul class="techs">
-                                <li class="tech">HTML</li>
-                                <li class="tech">CSS</li>
-                                <li class="tech">JavaScript</li>
-                            </ul>
-                            <p class="status">Completo</p>
-                        </article>
-                    </li>
-                    <li class="project">
-                        <img src="gta.png" alt="site que fala sobre o jogo GTA San Andreas">
-                        <article class="info">
-                            <div class="title-project">
-                                <h4>GTA</h4>
-                                <div class="links">
-                                    <a href="https://github.com/GKPTAN/projeto-GTA" target="_blank"><i class="fab fa-github"></i></a>
-                                    <a href="https://gkptan.github.io/projeto-GTA" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                            <p class="description">Site que fala sobre o jogo GTA San Andreas</p>
-                            <ul class="techs">
-                                <li class="tech">HTML</li>
-                                <li class="tech">CSS</li>
-                                <li class="tech">JavaScript</li>
-                            </ul>
-                            <p class="status">Completo</p>
-                        </article>
-                    </li>
-                    <li class="project">
-                        <img src="login.png" alt="Página de Login">
-                        <article class="info">
-                            <div class="title-project">
-                                <h4>Projeto Página de Login</h4>
-                                <div class="links">
-                                    <a href="https://github.com/GKPTAN/projeto-login" target="_blank"><i class="fab fa-github"></i></a>
-                                    <a href="https://gkptan.github.io/projeto-login" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                            <p class="description">Página de Login</p>
-                            <ul class="techs">
-                                <li class="tech">HTML</li>
-                                <li class="tech">CSS</li>
-                            </ul>
-                            <p class="status">Completo</p>
-                        </article>
-                    </li>
-                    <li class="project">
-                        <img src="Cordel.png" alt="Projeto Cordel, uma página personalizada para um poema">
-                        <article class="info">
-                            <div class="title-project">
-                                <h4>Projeto Cordel</h4>
-                                <div class="links">
-                                    <a href="https://github.com/GKPTAN/Projeto-cordel" target="_blank"><i class="fab fa-github"></i></a>
-                                    <a href="https://gkptan.github.io/Projeto-cordel" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                            <p class="description">Uma página personalizada para um poema de Milton Duarte.</p>
-                            <ul class="techs">
-                                <li class="tech">HTML</li>
-                                <li class="tech">CSS</li>
-                            </ul>
-                            <p class="status">Completo</p>
-                        </article>
-                    </li>
-                    <li class="project">
-                        <img src="tempo.png" alt="Site para descobrir a previsão do tempo">
-                        <article class="info">
-                            <div class="title-project">
-                                <h4>Projeto Previsão do Tempo</h4>
-                                <div class="links">
-                                    <a href="https://github.com/GKPTAN/app-weather-forecast" target="_blank"><i class="fab fa-github"></i></a>
-                                    <a href="https://gkptan.github.io/app-weather-forecast/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                            <p class="description">Site para descobrir a previsão do tempo em uma cidade.</p>
-                            <ul class="techs">
-                                <li class="tech">HTML</li>
-                                <li class="tech">CSS</li>
-                                <li class="tech">JavaScript</li>
-                                <li class="tech">APIs</li>
-                            </ul>
-                            <p class="status">Completo</p>
-                        </article>
-                    </li>
-                    <li class="project">
-                        <img src="android.png" alt="Site que conta sobre a história do sistema operacional Android">
-                        <article class="info">
-                            <div class="title-project">
-                                <h4>Projeto Android History</h4>
-                                <div class="links">
-                                    <a href="https://github.com/GKPTAN/correction-of-site-android-history" target="_blank"><i class="fab fa-github"></i></a>
-                                    <a href="https://gkptan.github.io/correction-of-site-android-history" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                            <p class="description">Site que conta sobre a história do Android.</p>
-                            <ul class="techs">
-                                <li class="tech">HTML</li>
-                                <li class="tech">CSS</li>
-                            </ul>
-                            <p class="status">Completo</p>
-                        </article>
-                    </li>
-                    <li class="project">
-                        <img src="one_piece.png" alt="Site que descreve o elenco principal de One Piece.">
-                        <article class="info">
-                            <div class="title-project">
-                                <h4>Projeto One Piece</h4>
-                                <div class="links">
-                                    <a href="https://github.com/GKPTAN/projeto-one-piece" target="_blank"><i class="fab fa-github"></i></a>
-                                    <a href="https://gkptan.github.io/projeto-one-piece" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                            <p class="description">Site que descreve o elenco principal de One Piece.</p>
-                            <ul class="techs">
-                                <li class="tech">HTML</li>
-                                <li class="tech">CSS</li>
-                                <li class="tech">JavaScript</li>
-                            </ul>
-                            <p class="status">Completo</p>
-                        </article>
-                    </li>
+      <section class="done">
+        <h2 class="subtitle">PROJETOS FEITOS POR MIM</h2>
+        <h3>HTML, CSS e JAVASCRIPT</h3>
+        <ul class="list-projects">
+          <li class="project">
+            <video
+              src="shoes_store.mp4"
+              class="video-project"
+              onmouseover="this.play();"
+              onmouseleave="this.pause()"
+              loop
+            ></video>
+            <a href="https://gkptan.github.io/Loja-de-calcados" target="_blank"
+              >Loja de Calçados</a
+            >
+          </li>
+          <li class="project">
+            <video
+              src="day_and_night.mp4"
+              class="video-project"
+              onmouseover="this.play();"
+              onmouseleave="this.pause()"
+              loop
+            ></video>
+            <a href="https://gkptan.github.io/Day_and_Night" target="_blank"
+              >Dia e Noite</a
+            >
+          </li>
+          <li class="project">
+            <video
+              src="guessing_game.mp4"
+              class="video-project"
+              onmouseover="this.play();"
+              onmouseleave="this.pause()"
+              loop
+            ></video>
+            <a
+              href="https://gkptan.github.io/Javascript/exerc%C3%ADcios/ex012/index.html"
+              target="_blank"
+              >Jogo de adivinhação</a
+            >
+          </li>
+        </ul>
+        <h3>REACT</h3>
+        <ul class="list-projects">
+          <li class="project-react">
+            <img
+              src="kingtech.png"
+              alt="KingTech - e-commerce de produtos eletrônicos em geral."
+            />
+            <article class="info">
+              <div class="title-project">
+                <h4>KingTech</h4>
+                <div class="links">
+                  <a href="https://github.com/GKPTAN/KingTech" target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                  <a href="https://kingtech-ashy.vercel.app/" target="_blank"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                </div>
+              </div>
+              <p class="description">
+                Web app de um e-commerce de produtos eletrônicos completo, com
+                interface responsiva, sistema crud para produtos e usuários,
+                relatórios de desempenho da loja e agentes de IA.
+              </p>
+              <ul class="techs">
+                <li class="tech">React</li>
+                <li class="tech">Vite</li>
+                <li class="tech">CSS</li>
+                <li class="tech">JavaScript</li>
+                <li class="tech">MUI</li>
+                <li class="tech">Supabase</li>
+                <li class="tech">Axios</li>
+                <li class="tech">Node.js</li>
+                <li class="tech">Fastify</li>
+                <li class="tech">HIBP</li>
+                <li class="tech">JWT</li>
+                <li class="tech">NodeMailer</li>
+                <li class="tech">PostgreSQL</li>
+              </ul>
+              <p class="status">Em progresso</p>
+            </article>
+          </li>
+        </ul>
+      </section>
+      <section class="events">
+        <h2 class="subtitle">PROJETOS DE EVENTOS QUE EU PARTICIPEI</h2>
+        <div class="web">
+          <h3>HTML, CSS e JAVASCRIPT</h3>
+          <ul class="list-projects">
+            <li class="project">
+              <img src="portfolio.png" alt="portfólio de trabalho" />
+              <article class="info">
+                <div class="title-project">
+                  <h4>Portfólio</h4>
+                  <div class="links">
+                    <a
+                      href="https://github.com/GKPTAN/Portfolio"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                    <a href="https://gkptan.github.io/Portfolio" target="_blank"
+                      ><i class="fas fa-external-link-alt"></i
+                    ></a>
+                  </div>
+                </div>
+                <p class="description">Portfólio de trabalho</p>
+                <ul class="techs">
+                  <li class="tech">HTML</li>
+                  <li class="tech">CSS</li>
+                  <li class="tech">JavaScript</li>
                 </ul>
-            </div>
-            <div class="react">
-                <h3>REACT</h3>
-                <ul class="list-projects">
-                    <li>
-                        <img src="" alt="">
-                        <a href="https://movies-geek.vercel.app" target="_blank">Movies Geek</a>
-                    </li>
-                    <li>
-                        <img src="" alt="">
-                        <a href="https://portfolio-sass-ten.vercel.app" target="_blank">Portfolio feito com SASS</a>
-                    </li>
-                    <li>
-                        <img src="" alt="">
-                        <a href="https://quiz-eosin-theta.vercel.app" target="_blank">Quiz</a>
-                    </li>
-                    <li>
-                        <img src="" alt="">
-                        <a href="https://countdown-six-beta.vercel.app" target="_blank">Contagem Regressiva</a>
-                    </li>
-                    <li>
-                        <img src="" alt="">
-                        <a href="https://todo-black-nine.vercel.app" target="_blank">Lista de Tarefas</a>
-                    </li>
-                    <li>
-                        <img src="" alt="">
-                        <a href="https://form-newsletter-five.vercel.app" target="_blank">Formulário de Registro</a>
-                    </li>
+                <p class="status">Completo</p>
+              </article>
+            </li>
+            <li class="project">
+              <img
+                src="gta.png"
+                alt="site que fala sobre o jogo GTA San Andreas"
+              />
+              <article class="info">
+                <div class="title-project">
+                  <h4>GTA</h4>
+                  <div class="links">
+                    <a
+                      href="https://github.com/GKPTAN/projeto-GTA"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                    <a
+                      href="https://gkptan.github.io/projeto-GTA"
+                      target="_blank"
+                      ><i class="fas fa-external-link-alt"></i
+                    ></a>
+                  </div>
+                </div>
+                <p class="description">
+                  Site que fala sobre o jogo GTA San Andreas
+                </p>
+                <ul class="techs">
+                  <li class="tech">HTML</li>
+                  <li class="tech">CSS</li>
+                  <li class="tech">JavaScript</li>
                 </ul>
-            </div>
-        </section>
-        <section class="cursos">
-            <h2>Repositórios de Cursos Online</h2>
-            <ul class="list-projects">
-                <li>
-                    <img src="" alt="">
-                    <a href="https://github.com/GKPTAN/HTML-CSS" target="_blank">HTML e CSS</a>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <a href="https://github.com/GKPTAN/Javascript" target="_blank">JavaScript</a>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <a href="https://github.com/GKPTAN/REACT" target="_blank">REACT</a>
-                </li>
-            </ul>
-        </section>
+                <p class="status">Completo</p>
+              </article>
+            </li>
+            <li class="project">
+              <img src="login.png" alt="Página de Login" />
+              <article class="info">
+                <div class="title-project">
+                  <h4>Projeto Página de Login</h4>
+                  <div class="links">
+                    <a
+                      href="https://github.com/GKPTAN/projeto-login"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                    <a
+                      href="https://gkptan.github.io/projeto-login"
+                      target="_blank"
+                      ><i class="fas fa-external-link-alt"></i
+                    ></a>
+                  </div>
+                </div>
+                <p class="description">Página de Login</p>
+                <ul class="techs">
+                  <li class="tech">HTML</li>
+                  <li class="tech">CSS</li>
+                </ul>
+                <p class="status">Completo</p>
+              </article>
+            </li>
+            <li class="project">
+              <img
+                src="Cordel.png"
+                alt="Projeto Cordel, uma página personalizada para um poema"
+              />
+              <article class="info">
+                <div class="title-project">
+                  <h4>Projeto Cordel</h4>
+                  <div class="links">
+                    <a
+                      href="https://github.com/GKPTAN/Projeto-cordel"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                    <a
+                      href="https://gkptan.github.io/Projeto-cordel"
+                      target="_blank"
+                      ><i class="fas fa-external-link-alt"></i
+                    ></a>
+                  </div>
+                </div>
+                <p class="description">
+                  Uma página personalizada para um poema de Milton Duarte.
+                </p>
+                <ul class="techs">
+                  <li class="tech">HTML</li>
+                  <li class="tech">CSS</li>
+                </ul>
+                <p class="status">Completo</p>
+              </article>
+            </li>
+            <li class="project">
+              <img
+                src="tempo.png"
+                alt="Site para descobrir a previsão do tempo"
+              />
+              <article class="info">
+                <div class="title-project">
+                  <h4>Projeto Previsão do Tempo</h4>
+                  <div class="links">
+                    <a
+                      href="https://github.com/GKPTAN/app-weather-forecast"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                    <a
+                      href="https://gkptan.github.io/app-weather-forecast/"
+                      target="_blank"
+                      ><i class="fas fa-external-link-alt"></i
+                    ></a>
+                  </div>
+                </div>
+                <p class="description">
+                  Site para descobrir a previsão do tempo em uma cidade.
+                </p>
+                <ul class="techs">
+                  <li class="tech">HTML</li>
+                  <li class="tech">CSS</li>
+                  <li class="tech">JavaScript</li>
+                  <li class="tech">APIs</li>
+                </ul>
+                <p class="status">Completo</p>
+              </article>
+            </li>
+            <li class="project">
+              <img
+                src="android.png"
+                alt="Site que conta sobre a história do sistema operacional Android"
+              />
+              <article class="info">
+                <div class="title-project">
+                  <h4>Projeto Android History</h4>
+                  <div class="links">
+                    <a
+                      href="https://github.com/GKPTAN/correction-of-site-android-history"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                    <a
+                      href="https://gkptan.github.io/correction-of-site-android-history"
+                      target="_blank"
+                      ><i class="fas fa-external-link-alt"></i
+                    ></a>
+                  </div>
+                </div>
+                <p class="description">
+                  Site que conta sobre a história do Android.
+                </p>
+                <ul class="techs">
+                  <li class="tech">HTML</li>
+                  <li class="tech">CSS</li>
+                </ul>
+                <p class="status">Completo</p>
+              </article>
+            </li>
+            <li class="project">
+              <img
+                src="one_piece.png"
+                alt="Site que descreve o elenco principal de One Piece."
+              />
+              <article class="info">
+                <div class="title-project">
+                  <h4>Projeto One Piece</h4>
+                  <div class="links">
+                    <a
+                      href="https://github.com/GKPTAN/projeto-one-piece"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                    <a
+                      href="https://gkptan.github.io/projeto-one-piece"
+                      target="_blank"
+                      ><i class="fas fa-external-link-alt"></i
+                    ></a>
+                  </div>
+                </div>
+                <p class="description">
+                  Site que descreve o elenco principal de One Piece.
+                </p>
+                <ul class="techs">
+                  <li class="tech">HTML</li>
+                  <li class="tech">CSS</li>
+                  <li class="tech">JavaScript</li>
+                </ul>
+                <p class="status">Completo</p>
+              </article>
+            </li>
+          </ul>
+        </div>
+        <div class="react">
+          <h3>REACT</h3>
+          <ul class="list-projects">
+            <li class="project">
+              <img src="movies.png" alt="Catálogo digital sobre filmes." />
+              <article class="info">
+                <div class="title-project">
+                  <h4>Movies Geek</h4>
+                  <div class="links">
+                    <a
+                      href="https://github.com/GKPTAN/REACT/tree/main/movies_geek"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                    <a href="https://movies-geek.vercel.app" target="_blank"
+                      ><i class="fas fa-external-link-alt"></i
+                    ></a>
+                  </div>
+                </div>
+                <p class="description">
+                  web app responsivo que centraliza informações detalhadas sobre
+                  filmes, permitindo buscas rápidas e descobertas de novos
+                  titulos em tempo real.
+                </p>
+                <ul class="techs">
+                  <li class="tech">React</li>
+                  <li class="tech">Vite</li>
+                  <li class="tech">CSS</li>
+                  <li class="tech">JavaScript</li>
+                </ul>
+                <p class="status">Completo</p>
+              </article>
+            </li>
+            <li class="project">
+              <img src="portfolio_sass.png" alt="Portfólio de trabalho." />
+              <article class="info">
+                <div class="title-project">
+                  <h4>Portfólio</h4>
+                  <div class="links">
+                    <a
+                      href="https://github.com/GKPTAN/REACT/tree/main/portfolio_sass"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                    <a
+                      href="https://portfolio-sass-ten.vercel.app"
+                      target="_blank"
+                      ><i class="fas fa-external-link-alt"></i
+                    ></a>
+                  </div>
+                </div>
+                <p class="description">Portfólio de trabalho feito com SASS.</p>
+                <ul class="techs">
+                  <li class="tech">React</li>
+                  <li class="tech">Vite</li>
+                  <li class="tech">SASS</li>
+                  <li class="tech">JavaScript</li>
+                </ul>
+                <p class="status">Completo</p>
+              </article>
+            </li>
+            <li class="project">
+              <img src="quiz.png" alt="Quiz sobre programação." />
+              <article class="info">
+                <div class="title-project">
+                  <h4>Quiz</h4>
+                  <div class="links">
+                    <a
+                      href="https://github.com/GKPTAN/REACT/tree/main/quiz"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                    <a
+                      href="https://quiz-eosin-theta.vercel.app"
+                      target="_blank"
+                      ><i class="fas fa-external-link-alt"></i
+                    ></a>
+                  </div>
+                </div>
+                <p class="description">
+                  Quiz de perguntas de múltiplas escolhas sobre programação.
+                </p>
+                <ul class="techs">
+                  <li class="tech">React</li>
+                  <li class="tech">Vite</li>
+                  <li class="tech">CSS</li>
+                  <li class="tech">JavaScript</li>
+                </ul>
+                <p class="status">Completo com futuras atualizações</p>
+              </article>
+            </li>
+            <li class="project">
+              <img
+                src="contagem.png"
+                alt="web app que mostra uma contagem regressiva."
+              />
+              <article class="info">
+                <div class="title-project">
+                  <h4>Contagem Regressiva</h4>
+                  <div class="links">
+                    <a
+                      href="https://github.com/GKPTAN/REACT/tree/main/countdown"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                    <a
+                      href="https://countdown-six-beta.vercel.app"
+                      target="_blank"
+                      ><i class="fas fa-external-link-alt"></i
+                    ></a>
+                  </div>
+                </div>
+                <p class="description">
+                  Web app responsivo que mostra uma contagem regressiva de
+                  acordo com a data inserida pelo usuário, com opção de definir
+                  um título, a imagem de fundo e a cor do tema.
+                </p>
+                <ul class="techs">
+                  <li class="tech">React</li>
+                  <li class="tech">Vite</li>
+                  <li class="tech">CSS</li>
+                  <li class="tech">JavaScript</li>
+                </ul>
+                <p class="status">Completo</p>
+              </article>
+            </li>
+            <li class="project">
+              <img src="todo.png" alt="web app de lista de tarefas." />
+              <article class="info">
+                <div class="title-project">
+                  <h4>Lista de tarefas</h4>
+                  <div class="links">
+                    <a
+                      href="https://github.com/GKPTAN/REACT/tree/main/todo"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                    <a href="https://todo-black-nine.vercel.app" target="_blank"
+                      ><i class="fas fa-external-link-alt"></i
+                    ></a>
+                  </div>
+                </div>
+                <p class="description">
+                  Web app responsivo onde o usuário pode criar uma lista de
+                  tarefas, marcar as que foram concluidas, desmarcar, e apagar
+                  tarefas.
+                </p>
+                <ul class="techs">
+                  <li class="tech">React</li>
+                  <li class="tech">Vite</li>
+                  <li class="tech">CSS</li>
+                  <li class="tech">JavaScript</li>
+                </ul>
+                <p class="status">Completo</p>
+              </article>
+            </li>
+            <li class="project">
+              <img src="form.png" alt="Formulário de inscrição." />
+              <article class="info">
+                <div class="title-project">
+                  <h4>Formulário de inscrição</h4>
+                  <div class="links">
+                    <a
+                      href="https://github.com/GKPTAN/REACT/tree/main/form_newsletter"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                    <a
+                      href="https://form-newsletter-five.vercel.app"
+                      target="_blank"
+                      ><i class="fas fa-external-link-alt"></i
+                    ></a>
+                  </div>
+                </div>
+                <p class="description">
+                  Formulário de inscrição para um serviço de e-mails sobre
+                  noticias, dicas e novidades.
+                </p>
+                <ul class="techs">
+                  <li class="tech">React</li>
+                  <li class="tech">Vite</li>
+                  <li class="tech">TailwindCSS</li>
+                  <li class="tech">TypeScript</li>
+                </ul>
+                <p class="status">Completo</p>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="cursos">
+        <h2>Repositórios de Cursos Online</h2>
+        <ul class="list-repositories">
+          <li class="repository">
+              <img
+                src="html_css.webp"
+                alt="Repositório de HTML e CSS"
+              />
+              <article class="info">
+                <div class="title-repo">
+                  <h4>HTML e CSS</h4>
+                  <div class="links">
+                    <a
+                      href="https://github.com/GKPTAN/HTML-CSS"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                    <a
+                      href="https://gkptan.github.io/HTML-CSS"
+                      target="_blank"
+                      ><i class="fas fa-external-link-alt"></i
+                    ></a>
+                  </div>
+                </div>
+              </article>
+          </li>
+          <li class="repository">
+              <img
+                src="javascript_repo.png"
+                alt="Repositório de Javascript"
+              />
+              <article class="info">
+                <div class="title-repo">
+                  <h4>JavaScript</h4>
+                  <div class="links">
+                    <a
+                      href="https://github.com/GKPTAN/Javascript"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                    <a
+                      href="https://gkptan.github.io/Javascript"
+                      target="_blank"
+                      ><i class="fas fa-external-link-alt"></i
+                    ></a>
+                  </div>
+                </div>
+              </article>
+          </li>
+          <li class="repository">
+              <img
+                src="react.png"
+                alt="Repositório de React"
+              />
+              <article class="info">
+                <div class="title-repo">
+                  <h4>React</h4>
+                  <div class="links">
+                    <a
+                      href="https://github.com/GKPTAN/REACT"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                    <a
+                      href="https://gkptan.github.io/REACT"
+                      target="_blank"
+                      ><i class="fas fa-external-link-alt"></i
+                    ></a>
+                  </div>
+                </div>
+              </article>
+          </li>
+          <li class="repository">
+              <img
+                src="java.avif"
+                alt="Repositório de Java"
+              />
+              <article class="info">
+                <div class="title-repo">
+                  <h4>Java</h4>
+                  <div class="links">
+                    <a
+                      href="https://github.com/GKPTAN/JAVA"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                    <a
+                      href="https://gkptan.github.io/JAVA"
+                      target="_blank"
+                      ><i class="fas fa-external-link-alt"></i
+                    ></a>
+                  </div>
+                </div>
+              </article>
+          </li>
+        </ul>
+      </section>
     </main>
 
     <footer id="rodape">
-        <nav id="nav-bottom">
-            <ul>
-                <li><a href="https://github.com/GKPTAN" target="_blank" title="Ir para o Github" rel="author"><i class="fab fa-github"></i></a></li>
-                <li><a href="https://instagram.com/gkapitan07" target="_blank" title="Ir para o instagram" rel="author"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="https://linkedin.com/in/guilherme-dos-santos-amorim-43b57a28b" target="_blank" title="Ir para o linkedin" rel="author"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="https://wa.me/559984080271" target="_blank" title="Ir para o whatsapp" rel="author"><i class="fab fa-whatsapp"></i></a></li>
-                <li><a id="email" href="#" title="Clique para copiar o e-mail" rel="author"><i class="fas fa-envelope"></i></a></li>
-                <li class="copy">e-mail copiado com sucesso <i class="fas fa-check"></i></li>
-            </ul>
-        </nav>
+      <nav id="nav-bottom">
+        <ul>
+          <li>
+            <a
+              href="https://github.com/GKPTAN"
+              target="_blank"
+              title="Ir para o Github"
+              rel="author"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://instagram.com/gkapitan07"
+              target="_blank"
+              title="Ir para o instagram"
+              rel="author"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://linkedin.com/in/guilherme-dos-santos-amorim-43b57a28b"
+              target="_blank"
+              title="Ir para o linkedin"
+              rel="author"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://wa.me/559984080271"
+              target="_blank"
+              title="Ir para o whatsapp"
+              rel="author"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              id="email"
+              href="#"
+              title="Clique para copiar o e-mail"
+              rel="author"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </li>
+          <li class="copy">
+            e-mail copiado com sucesso <i class="fas fa-check"></i>
+          </li>
+        </ul>
+      </nav>
     </footer>
 
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
